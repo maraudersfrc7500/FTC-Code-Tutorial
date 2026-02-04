@@ -1,0 +1,19 @@
+.head {
+    background-color: pink;
+    height: 50px;
+}
+.nav {
+    width: 15%;
+    position: absolute;
+    /* border-style: solid; */
+    padding-left: 50px;
+    margin-top: 50px;
+}
+.nav a {
+    color: black;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: limegreen;
+    transition: 0.2s;
+}

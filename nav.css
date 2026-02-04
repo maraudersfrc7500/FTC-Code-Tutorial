@@ -3,12 +3,12 @@
     height: 50px;
 }
 .nav {
-    width: 15%;
+    width: 15vw;
     position: fixed;
     /* border-style: solid; */
     padding-left: 50px;
     margin-top: 50px;
-    height: 85%;
+    height: 85vh;
     overflow-y: auto;
 }
 .nav a {

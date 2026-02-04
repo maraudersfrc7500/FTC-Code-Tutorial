@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
+    <title>Getting Started</title>
+</head>
+<body>
+    <div class="head"></div>
+    <div class="nav">
+        <h2><a href="index.html">Welcome</a></h2>
+        <h2><a href="gettingstarted.html">Getting Started</a></h2>
+        <h2><a href="beginner.html">Beginner</a></h2>
+        <p><a href="opmodes.html">OpModes</a></p>
+        <p>Motors</p>
+        <p>Gamepads</p>
+        <p>Telemetry</p>
+        <p>Beginner Wrap-Up</p>
+        <h2>Intermediate</h2>
+        <p>FTCLib</p>
+        <p>OpModes Continued</p>
+        <p>Motors Continued</p>
+        <p>Servos</p>
+        <p>Intermediate Wrap-Up</p>
+        <h2>Advanced</h2>
+        <p>Command-Based Programming</p>
+        <p>Odometry</p>
+        <p>Vision</p>
+        <p>Path Planning</p>
+        <p>Complete Wrap-Up</p>
+    </div>
+    <div class="body">
+        <h1>OpModes</h1>
+        <p>There are various types of OpModes in FTC Coding. However, for the beginner part of this, we will only be focusing on two types of OpModes: OpMode and LinearOpMode</p>
+        <h2>OpMode</h2>
+        <p>The base OpMode is the most simple of the OpModes, containing two methods <code>init()</code> and <code>loop()</code>. For example, if you had a TeleOp OpMode file called <code>Manual</code> labeled "manual" in the driver station, it would look like this: </p>
+        <pre>
+            <code>
+@TeleOp(name = "manual")
+public class Manual extends OpMode {
+    @Override
+    public void init() {
+        //Code to be run during initialize here
+    }
+    
+    @Override
+    public void loop() {
+        //Code to be run every loop here
+    }
+}
+            </code></pre>
+            <h2>LinearOpMode</h2>
+            <p>LinearOpMode is a another basic OpMode. However, this consists of just one method, <code>runOpMode()</code>, rather than two methods, <code>init()</code> and <code>loop()</code>. An example of this as a TeleOp file called <code>Manual</code> labeled "manual" in the driver station would look like this: </p>
+            <pre>
+                <code>
+@TeleOp(name = "manual")
+public class Manual extends LinearOpMode {
+    @Override
+    public void runOpMode() {
+        //Enter initialize code here
+
+        waitForStart(); //Doesn't move past this line until start button is pressed
+        while (opModeIsActive()) {
+            //This code loops while the op mode is active,
+            //which is until the stop button is pressed
+        }
+    }
+}
+                </code>
+            </pre>
+            <p>Congratulations! You've finished learning the two basic OpModes! See you in the next step!</p>
+    </div>
+</body>
+</html>

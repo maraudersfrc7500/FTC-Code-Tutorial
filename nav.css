@@ -4,10 +4,12 @@
 }
 .nav {
     width: 15%;
-    position: absolute;
+    position: fixed;
     /* border-style: solid; */
     padding-left: 50px;
     margin-top: 50px;
+    height: 85%;
+    overflow-y: auto;
 }
 .nav a {
     color: black;

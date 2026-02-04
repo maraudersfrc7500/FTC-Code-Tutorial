@@ -13,12 +13,28 @@ body {
 .body h1 {
     font-size: 64px;
 }
+.body h2 {
+    font-size: 40px;
+}
 .body p {
     font-size: 20px;
 }
 .body li {
     font-size: 20px;
 }
+pre {
+    background-color: #f1f7ff;
+    border-radius: 15px;
+    padding-inline: 15px;
+}
 code {
     font-size: 20px;
+    background-color: #f1f7ff;
+    padding: 3px;
+}
+pre code {
+    background-color: transparent;
+}
+a {
+    color: limegreen;
 }
